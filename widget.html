@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Civic RAG</title>
+<style>body{font:16px system-ui,sans-serif;max-width:720px;margin:32px auto;padding:0 16px;color:#17212b}#log{border:1px solid #d8dee5;border-radius:10px;min-height:230px;padding:16px}.row{margin:10px 0}.me{text-align:right}.bubble{display:inline-block;max-width:85%;padding:9px 12px;border-radius:10px;background:#eef3f6;white-space:pre-wrap;text-align:left}.me .bubble{background:#176b4d;color:white}.sources{font-size:.85em;margin:4px 0 15px;color:#52616d}form{display:flex;gap:8px;margin-top:12px}input{flex:1;padding:10px;font:inherit}button{padding:10px 16px;background:#176b4d;border:0;border-radius:6px;color:white;font:inherit}.note{font-size:.9em;color:#52616d}</style>
+<main><h1>Ask your local government</h1><p class="note">Answers use only pages in the configured public website corpus.</p><div id="log"><div class="row"><span class="bubble">What can I help you find?</span></div></div><form id="form"><input id="question" placeholder="Ask about a service, meeting, or program" autocomplete="off"><button>Ask</button></form><p class="note">Do not enter personal information. The assistant does not give legal, financial, medical, or eligibility advice.</p></main>
+<script>
+const log=document.querySelector('#log'),form=document.querySelector('#form'),input=document.querySelector('#question');
+function add(text,who,sources=[]){const row=document.createElement('div');row.className='row '+who;const bubble=document.createElement('span');bubble.className='bubble';bubble.textContent=text;row.append(bubble);log.append(row);if(sources.length){const links=document.createElement('div');links.className='sources';links.textContent='Sources: ';sources.forEach((s,i)=>{const a=document.createElement('a');a.href=s.url;a.target='_blank';a.rel='noopener';a.textContent=s.title;links.append(a);if(i<sources.length-1)links.append(' · ')});log.append(links)}log.scrollTop=log.scrollHeight}
+form.addEventListener('submit',async event=>{event.preventDefault();const q=input.value.trim();if(!q)return;add(q,'me');input.value='';try{const response=await fetch('/ask',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({q})});const data=await response.json();add(data.answer||data.error||'Request failed.','bot',data.sources||[])}catch{add('Request failed. Please try again later.','bot')}});
+</script>
+</html>

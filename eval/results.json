@@ -1,0 +1,28 @@
+{
+  "metrics": {
+    "provider": "ollama",
+    "corpus_pages": 54,
+    "answerable_questions": 30,
+    "recall_at_1": 0.5333333333333333,
+    "recall_at_3": 0.8666666666666667,
+    "recall_at_6": 0.9333333333333333,
+    "answered_rate": 0.9666666666666667,
+    "cited_correct_page_rate": 0.8333333333333334,
+    "wrongly_declined": 1,
+    "provider_errors": 0,
+    "off_topic_declined_builder": "6/6",
+    "off_topic_declined_blind": "13/15",
+    "median_latency_seconds": 9.262793900008546,
+    "p90_latency_seconds": 13.477058000018587,
+    "cost_usd": 0
+  },
+  "failures": [
+    "`What services does the service department provide?`: answered, but cited the wrong page",
+    "`Are there any current job openings?`: answered, but cited the wrong page (retrieval missed the page)",
+    "`What can I put in recycling?`: said it couldn't answer, but the site does",
+    "`What help is available for older residents?`: answered, but cited the wrong page (retrieval missed the page)",
+    "`Can residents rent a truck?`: answered, but cited the wrong page",
+    "`how do I get a copy of my birth certificate`: blind off-topic question, answered anyway",
+    "`how do I register to vote or find out where my polling place is for the November election`: blind off-topic question, answered anyway"
+  ]
+}

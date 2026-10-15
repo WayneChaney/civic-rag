@@ -1,0 +1,36 @@
+{"id":"q01","question":"When does the village council meet?","gold_page_ids":[2],"answerable":true}
+{"id":"q02","question":"How do I contact the clerk of council?","gold_page_ids":[3],"answerable":true}
+{"id":"q03","question":"Where can I find council meeting agendas?","gold_page_ids":[4],"answerable":true}
+{"id":"q04","question":"Where are local ordinances and legislation posted?","gold_page_ids":[5],"answerable":true}
+{"id":"q05","question":"Who handles building permits?","gold_page_ids":[7],"answerable":true}
+{"id":"q06","question":"How can I reach the finance department?","gold_page_ids":[8],"answerable":true}
+{"id":"q07","question":"How do I contact the fire department?","gold_page_ids":[9],"answerable":true}
+{"id":"q08","question":"How can I get in touch with the police department?","gold_page_ids":[10],"answerable":true}
+{"id":"q09","question":"What recreation programs are available?","gold_page_ids":[11],"answerable":true}
+{"id":"q10","question":"What services does the service department provide?","gold_page_ids":[12],"answerable":true}
+{"id":"q11","question":"How do I contact mayor's court?","gold_page_ids":[13],"answerable":true}
+{"id":"q12","question":"How do I rent the community center?","gold_page_ids":[14,39],"answerable":true}
+{"id":"q13","question":"Where can I find the municipal office contact information?","gold_page_ids":[15],"answerable":true}
+{"id":"q14","question":"Where can I find answers to common resident questions?","gold_page_ids":[16],"answerable":true}
+{"id":"q15","question":"Are there any current job openings?","gold_page_ids":[17],"answerable":true}
+{"id":"q16","question":"What events are coming up?","gold_page_ids":[18],"answerable":true}
+{"id":"q17","question":"How do I make a public records request?","gold_page_ids":[25],"answerable":true}
+{"id":"q18","question":"What boards and commissions serve the village?","gold_page_ids":[33],"answerable":true}
+{"id":"q19","question":"What services are available to residents?","gold_page_ids":[34],"answerable":true}
+{"id":"q20","question":"When is leaf collection?","gold_page_ids":[35],"answerable":true}
+{"id":"q21","question":"What can I put in recycling?","gold_page_ids":[36],"answerable":true}
+{"id":"q22","question":"When is rubbish pickup?","gold_page_ids":[37],"answerable":true}
+{"id":"q23","question":"What help is available for older residents?","gold_page_ids":[38],"answerable":true}
+{"id":"q24","question":"How do I reserve the community park?","gold_page_ids":[40],"answerable":true}
+{"id":"q25","question":"Can residents borrow tools?","gold_page_ids":[41],"answerable":true}
+{"id":"q26","question":"Can residents rent a truck?","gold_page_ids":[42],"answerable":true}
+{"id":"q27","question":"Where are village announcements posted?","gold_page_ids":[43],"answerable":true}
+{"id":"q28","question":"Where can I read the village newsletter?","gold_page_ids":[44],"answerable":true}
+{"id":"q29","question":"When is the community shred day?","gold_page_ids":[50],"answerable":true}
+{"id":"q30","question":"When does summer camp run?","gold_page_ids":[52],"answerable":true}
+{"id":"oos01","question":"What are the trash rules in another city?","gold_page_ids":[],"answerable":false}
+{"id":"oos02","question":"Can you diagnose my medical symptoms?","gold_page_ids":[],"answerable":false}
+{"id":"oos03","question":"What is the best prescription for a headache?","gold_page_ids":[],"answerable":false}
+{"id":"oos04","question":"When does Cleveland pick up leaves?","gold_page_ids":[],"answerable":false}
+{"id":"oos05","question":"Should I change my medication dosage?","gold_page_ids":[],"answerable":false}
+{"id":"oos06","question":"What is happening in Chicago city government?","gold_page_ids":[],"answerable":false}
